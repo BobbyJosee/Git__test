@@ -1,0 +1,12 @@
+#!/home/user/lnt/venv/bin/python2
+# EASY-INSTALL-ENTRY-SCRIPT: 'simcalc','console_scripts','simcalc'
+__requires__ = 'simcalc'
+import re
+import sys
+from pkg_resources import load_entry_point
+
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])
+    sys.exit(
+        load_entry_point('simcalc', 'console_scripts', 'simcalc')()
+    )
